@@ -1,0 +1,44 @@
+{
+  "liveServer": {
+    "hostname": "myServiceEndpointHostname.com",
+    "port": 86759
+  },
+  "mockServer": {
+    "listeningPort": 5555,
+    "dataDir": "./mymock-data",
+    "definitions": [
+      {
+        "request": {
+          "header": "mockDetails",
+          "path": "/path/to/details/resource",
+          "method": "GET"
+        },
+        "response": {
+          "data": "details.json",
+          "status": 200
+        },
+        "fail": {
+          "response": {
+            "status": 500
+          }
+        }
+      },
+      {
+        "request": {
+          "header": "mockSetDetails",
+          "path": "/path/to/details/resource",
+          "method": "POST"
+        },
+        "response": {
+          "data": "details-response.json",
+          "status": 200
+        },
+        "fail": {
+          "response": {
+            "status": 500
+          }
+        }
+      }
+    ]
+  }
+}

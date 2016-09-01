@@ -1,0 +1,10 @@
+# Project name
+  name=mymock
+
+# Project repositories
+  primary=git@godswhim.us:mymock.git
+  secondary=git@gitlab.com:papiro/mymock.git
+  tertiary=/var/backups/mymock.git
+  quaternary=git@github.com:papiro/mymock.git
+
+# Project submodules
