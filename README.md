@@ -1,5 +1,5 @@
 # Header-driven mock server with proxying
-## mymock.js
+### mymock.js
 ---
 **Key Features**
 + Toggle headers on/off for on-the-fly fine-grained control over which endpoints get mocked and which pass through to the live service.
