@@ -5,6 +5,7 @@
 + Toggle headers on/off for on-the-fly fine-grained control over which endpoints get mocked and which pass through to the live service.
 + Any requests which aren't being mocked are forwarded by mymock (which acts as a proxy) to the live service and the response is, of course, hand-delivered back to your page by mymock.
 + Live response data editing without restarting the mymock server!
+
 ---
 
 There's little use for mymock in a home/personal development environment where you're writing all your own services anyways, but boy does it come in handy when doing development at work!
