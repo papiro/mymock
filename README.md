@@ -5,6 +5,7 @@
 + Toggle headers on/off for on-the-fly fine-grained control over which endpoints get mocked and which pass through to the live service.
 + Any requests which aren't being mocked are forwarded by mymock (which acts as a proxy) to the live service and the response is, of course, hand-delivered back to your page by mymock.
 + Live response data editing without restarting the mymock server!
++ Failure scenario testing by adding a "-fail" version of any header.
 
 ---
 
@@ -53,3 +54,6 @@ Your mymock-config.json would look something like:
 ```
 
 Add your response data mocks into a directory of your choice ("mymock-data" in the example above), start the server `node mymock` and voilà!  Toggle away :)
+
+Todo: 
+- All responses come with a response Content-Type: "application/json" header by default.  Make it configurable on a per-response basis by mymock-config.  For more complex cases where endpoints can respond with different data-types... well, mymock is gonna have to intelligently determine the Content-Type.
